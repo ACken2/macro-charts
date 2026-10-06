@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Macro indicator charts</title>
+    <style>
+        :root {
+            color-scheme: dark;
+        }
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: #111;
+            color: #e8e8e8;
+            font-family: "IBM Plex Mono", Consolas, monospace;
+        }
+        main {
+            max-width: 44rem;
+            margin: 0 auto;
+            padding: 3rem 1.5rem 4rem;
+        }
+        h1 {
+            font-size: 1.35rem;
+            font-weight: 600;
+            margin: 0 0 0.5rem;
+        }
+        h2 {
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin: 0 0 0.75rem;
+            color: #b0b0b0;
+        }
+        p {
+            color: #b0b0b0;
+            line-height: 1.5;
+            margin: 0 0 1.75rem;
+        }
+        ul {
+            list-style: none;
+            margin: 0 0 2rem;
+            padding: 0;
+        }
+        li {
+            border-top: 1px solid #2a2a2a;
+        }
+        li:last-child {
+            border-bottom: 1px solid #2a2a2a;
+        }
+        a {
+            color: #ededed;
+            text-decoration: none;
+            display: block;
+            padding: 0.9rem 0.15rem;
+        }
+        a:hover {
+            color: #fff;
+        }
+        .desc {
+            display: block;
+            color: #8a8a8a;
+            font-size: 0.85rem;
+            line-height: 1.4;
+            margin-top: 0.2rem;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Macro indicator charts</h1>
+        <p>
+            Self-contained Plotly pages. Each file is several megabytes;
+            the first load can take a while. Research charts, not investment advice.
+        </p>
+        <h2>K-wave</h2>
+        <ul>
+            <li>
+                <a href="kwave/kwave_dashboard.html">
+                    Phase probabilities
+                    <span class="desc">The leading phase only, plus the runner-up in a transition, and the five bucket z-scores.</span>
+                </a>
+            </li>
+            <li>
+                <a href="kwave/valuation_structure.html">
+                    Valuation structure
+                    <span class="desc">Shiller CAPE, trailing P/E, and the split of 12-month returns into earnings and multiple.</span>
+                </a>
+            </li>
+            <li>
+                <a href="kwave/monetary_debt.html">
+                    Monetary, debt, and real rates
+                    <span class="desc">10-year yield, term premium, breakeven real rate, and federal interest over receipts.</span>
+                </a>
+            </li>
+            <li>
+                <a href="kwave/capex_diffusion.html">
+                    Productivity, capex, and diffusion
+                    <span class="desc">Fernald TFP, hyperscaler capex over free cash flow, and software revenue relative to that capex.</span>
+                </a>
+            </li>
+            <li>
+                <a href="kwave/relative_ratios.html">
+                    Commodity and relative ratios
+                    <span class="desc">DBC over SPY, the long PPI analog, gold over copper, and SPY over the equal-weight ETF.</span>
+                </a>
+            </li>
+            <li>
+                <a href="kwave/returns_by_phase.html">
+                    Returns by phase
+                    <span class="desc">Real equity and long-bond returns. Since 1974 uses the rules model with one-year flickers removed. Since 1871 adds a judged history before that.</span>
+                </a>
+            </li>
+        </ul>
+        <h2>Business cycle</h2>
+        <ul>
+            <li>
+                <a href="cycle/cycle_dashboard.html">
+                    Cycle position
+                    <span class="desc">Eight indicators vote on whether a 10% decline reaches 30%, marked on the S&P.</span>
+                </a>
+            </li>
+            <li>
+                <a href="cycle/lead_study.html">
+                    Lead study
+                    <span class="desc">Which series turned 2 to 18 months before those crashes, and which did not.</span>
+                </a>
+            </li>
+        </ul>
+    </main>
+</body>
+</html>
